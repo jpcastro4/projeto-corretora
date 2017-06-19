@@ -1,0 +1,29 @@
+
+.font-preto{
+	color:#000 !important;
+}
+.has-gradient{
+    background-repeat: repeat-x;
+    background-image: linear-gradient(45deg, #663fb5, #2b8be3);
+    background-color:#663fb5;
+}
+.has-gradient-usuario {
+    background-repeat: repeat-x;
+    background-image: linear-gradient(45deg, #1b371b, #5cb85c);
+    background-color: #5cb85c;
+}
+.btn:hover, .btn:focus{
+	opacity: 1 !important;
+	background-color: #f33 !important;
+}
+
+.card-title{
+	margin-bottom:20px;
+}
+
+.ads{
+	clear:both;
+	padding:20px inherit;
+	margin-bottom:15px;
+}
+/*# sourceMappingURL=landio.css.map */
