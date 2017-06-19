@@ -5,7 +5,7 @@ class Ajax_functions extends CI_Controller {
     public function __construct(){
         parent::__construct();
 
-        $this->load->model('dashboard_model');
+        $this->load->model('usuario_model');
     }
 
     public function index(){
@@ -82,9 +82,27 @@ class Ajax_functions extends CI_Controller {
                                     'usuarioUltimoAcesso'=>date('Y-m-d H:i:s'),
                                     );
 
+                    $indicador = $this->usuario_model->indicadorDireto($fields['sponsorCode']);
+
+                    if( $indicador ){
+ 
+                        $fieldsSave['indicadorID'] = $indicador;
+                    }else{
+
+                         $fieldsSave['indicadorID'] = 1;
+                    }
+
                     $insert = $this->db->insert('usuarios', $fieldsSave );
 
                     if($insert){
+
+                        $walletSave = array(
+                                    'usuarioID'=>$this->db->insert_id(),
+                                    'carteiraEndereco'=>  $fields['carteiraEndereco'],
+                                    );
+                            
+                            $this->db->insert('usuarios_carteira', $walletSave );
+
 
                                 // $body = $this->load->view('email/senha',$data,TRUE);
 
@@ -103,7 +121,8 @@ class Ajax_functions extends CI_Controller {
 
                 }
 
-            }            
+            }
+
         }
 
         echo json_encode( array('result'=>'error','message'=>'Ação não permitida') ); 

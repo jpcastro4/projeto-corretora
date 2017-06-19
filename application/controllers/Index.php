@@ -31,7 +31,7 @@ class Index extends CI_Controller {
 
     public function register(){
 
-        $this->load->view('register');
+        $this->load->view('user/register');
     }
 
     public function lougout(){

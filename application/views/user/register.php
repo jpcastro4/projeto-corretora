@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url()?>assets/dashboard/img/apple-icon.png">
     <link rel="icon" type="image/png" href="<?php echo base_url()?>assets/dashboard/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Login Page - Now Ui Kit by Creative Tim</title>
+    <title>Register your account - Suprabit</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
@@ -229,7 +229,15 @@ $(document).ready(function(){
 
             $.post('<?php echo base_url("ajax_functions/")?>'+action, inputs , function(data){
                 
-                window.location.href = '<?php echo base_url("dashboard/profile")?>'
+                if(data.result == 'success'){
+                    window.location.href = '<?php echo base_url("dashboard/profile")?>'                    
+                }
+
+                if(data.result == 'error'){
+
+                    alert(data.message)
+                }
+                
 
             },'json')
             .fail(function(data){

@@ -98,10 +98,10 @@ $db['default'] = array(
 //SEMPRE COLOCAR DEPOIS DA ARRAY
 if( $_SERVER['HTTP_HOST'] == 'localhost'){ 
 	
-	$db['default']['hostname'] = 'localhost';//'grupoelloinvestimentos.com.mysql';
-	$db['default']['username'] = 'root';//'grupoelloinvestimentos_com';'grupoellouser';
-	$db['default']['password'] = 'root';//'997110';'RHw5nk9B9Tx?';
-	$db['default']['database'] = 'suprabit';
+	$db['default']['hostname'] = 'grupodifference.com';//'grupoelloinvestimentos.com.mysql';
+	$db['default']['username'] = 'difadmin_supra';//'grupoelloinvestimentos_com';'grupoellouser';
+	$db['default']['password'] = '1a2b3c4d5e6f7g';//'997110';'RHw5nk9B9Tx?';
+	$db['default']['database'] = 'difadmin_suprabit';
 
 }elseif( $_SERVER['HTTP_HOST'] == 'dev'){
 	
