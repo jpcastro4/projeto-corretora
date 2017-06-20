@@ -1,0 +1,46 @@
+Tela de cadastro e indicação
+campos de cadastro
+
+Tela de Regras e FAQ
+
+Tela inicial - dashboard
+Saldo Rendimento
+Saldo Direto
+Saldo Binario
+Saldo Residual
+Plano de carreira
+Maior pacote ativo corrente
+Link de indicação
+Ultimo comunicado oficial
+Afiliados ativos
+Afiliados posicionados pendentes
+
+Tela de Cotas
+Histórico de cotas com status (aguardando/pago/ativo/finalizada)
+
+Tela da rede
+O indicador
+Numero de indicados na esquerda
+Numero de indicados na direita
+Visualizar pernas até o nivel de ganho
+Toolgar a perna que recebe indicados
+
+
+Tela de Rendimentos
+Extrato de rendimentos
+Extrato de bonus direto
+Extrato de bonus perna
+Extrato bonus rede niveis
+Extrato plano de carreira
+
+Configurações
+//Perfil e Dados
+//Senha e Senha secundaria
+//Carteiras e Definir carteira principal
+
+
+Loja
+//Compra de cotas
+//Carteira Blockchain
+Comprar bitcoins
+Vender bitcoins
