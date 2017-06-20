@@ -77,6 +77,9 @@ class Ajax_functions extends CI_Controller {
 
                     $fieldsSave = array(
                                     'usuarioEmail'=>$fields['usuarioEmail'],
+                                    'usuarioNome'=>$fields['usuarioNome'],
+                                    'usuarioSobrenome'=>$fields['usuarioSobrenome'],
+                                    'usuarioCelular'=>$fields['usuarioCelular'],
                                     'usuarioSenha'=> sha1($fields['usuarioSenha']),
                                     'usuarioDataCadastro'=> date('Y-m-d H:i:s'),
                                     'usuarioUltimoAcesso'=>date('Y-m-d H:i:s'),
@@ -87,6 +90,7 @@ class Ajax_functions extends CI_Controller {
                     if( $indicador ){
  
                         $fieldsSave['indicadorID'] = $indicador;
+                        
                     }else{
 
                          $fieldsSave['indicadorID'] = 1;

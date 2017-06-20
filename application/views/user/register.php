@@ -122,11 +122,21 @@
                                 </span>
                                 <input type="email" name="usuarioCelular" class="form-control" placeholder="Cell Phone">
                             </div>
+                            <small class="mb-2"><span>If you do not have a wallet, create now at <a target="_blank" href="http://blockchain.info"> Blockchain.info</a></span></small>
                             <div class="input-group form-group-no-border input-lg">
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons business_money-coins"></i>
                                 </span>
                                 <input type="text" name="carteiraEndereco" class="form-control" placeholder="Bitcoin Wallet">
+                            </div>
+                            <hr class="col-12">
+                            <small class="mb-2"><span>Create a code with a maximum of 10 characters</span></small>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons business_badge"></i>
+                                </span>
+                                <input type="password" name="usuarioCodigo" placeholder="Your code network" class="form-control" />
+
                             </div>
 
                             <div class="input-group form-group-no-border input-lg">
